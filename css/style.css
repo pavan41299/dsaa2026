@@ -1,0 +1,168 @@
+
+.topbar {
+  background-color: #005bac;
+  font-size: 14px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(218, 38, 38, 0.4), rgba(0,0,0,0.4));
+  height: 80vh;
+}
+.video-section h2 {
+  font-weight: 600;
+}
+
+/* Hero Video Background */
+.hero-section {
+  position: relative;
+  height: 88vh;
+  overflow: hidden;
+}
+.overlay h1 {
+  color: #ffffff; /* bright cyan-blue */
+  font-weight: 900;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.overlay p {
+  color: #ffffff; /* hot pink */
+  font-weight: 800;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+.overlay h1,
+.overlay p {
+  text-shadow: 0 0 8px #ffffff, 0 0 16px #00d4ff;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.rainbow-outline {
+  position: relative;
+  color: white; /* Base color inside the letters */
+  font-weight: 900;
+  background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet, red);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbowText 6s linear infinite;
+  text-shadow:
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 3px #ff00ff,
+    0 0 4px #00ffff;
+}
+
+@keyframes rainbowText {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.overlay {
+  position: relative;
+  height: 100%;
+  z-index: 1;
+  /* background: rgba(0, 0, 0, 0.5); optional dark overlay for readability */
+}
+
+.overlay h1,
+.overlay p {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+  margin-right: 1rem;
+  font-weight: 500;
+  color:rgb(255, 255, 255);
+}
+
+.navbar.bg-dark {
+  background-color: rgb(0, 0, 0) !important; /* Almost fully opaque */
+}
+
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd !important; /* Bootstrap's primary blue */
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+/* About Section */
+.about-section {
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-family: 'Arial Black', sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.about-text {
+  background-color: #63ccda;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+/* Highlights & Programme Boxes */
+.highlight-box, .programme-box {
+  height: 150px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight-box {
+  background-color: #d5d5cf;
+}
+
+.programme-box {
+  background-color: #9effc9;
+}
+
+/* Important Dates */
+.important-dates {
+  background: linear-gradient(to right, #3c326a, #1f6fcf);
+  color: #000;
+}
+
+.important-title {
+  font-family: 'Arial Black', sans-serif;
+  background: linear-gradient(to right, #2e004f, #0066cc);
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.date-label {
+  font-family: 'Arial Black', sans-serif;
+  font-style: italic;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  font-size: 14px;
+}
